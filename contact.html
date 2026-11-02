@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Siyoyisile Indlala Community Farm</title>
+    <meta name="description" content="Contact Siyoyisile Indlala Community Farm for information about our community projects, farming services, and opportunities to get involved.">
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+    <link rel="stylesheet" href="https://unpkg.com" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <h1>Siyoyisile Indlala Community Farm</h1>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us / Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" class="container">
+        
+        <section class="map-section">
+            <h2>Find Our Farm Location</h2>
+            <p>We are situated inside Faranani Primary School in Protea Glen. Use the map tool below to look closer, pan around, or orient your route:</p>
+            
+           
+            <div id="farm-location-map" style="width: 100%; height: 400px; border: 2px solid var(--primary-green); border-radius: 8px; margin: 1.5rem 0; z-index: 1;"></div>
+        </section>
+
+        <section class="form-section" style="margin-top: 3rem;">
+            <h2>Contact General Administration</h2>
+            <p>Have a general inquiry, partnership query, or feedback message? Use this system form to compile your email directly to our offices:</p>
+
+            
+            <form id="contactForm" method="POST" action="mailto:info@siyoyisileindlala.org.za" enctype="text/plain" class="styled-farm-form" style="max-width: 600px; background-color: var(--light-green); padding: 2rem; border-radius: 6px;">
+                
+                <div class="form-group" style="margin-bottom: 1.25rem;">
+                    <label for="name" style="display: block; font-weight: bold; margin-bottom: 0.5rem;">Your Full Name:</label>
+                    <input type="text" id="name" name="name" style="width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px;" required>
+                </div>
+                
+                <div class="form-group" style="margin-bottom: 1.25rem;">
+                    <label for="email" style="display: block; font-weight: bold; margin-bottom: 0.5rem;">Your email</label>
+                    <input type="email" id="email" name="email" style="width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px;" required>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 1.25rem;">
+                    <label for="subject" style="display: block; font-weight: bold; margin-bottom: 0.5rem;">Subject Matter:</label>
+                    <input type="text" id="subject" name="subject" style="width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px;" required>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 1.5rem;">
+                    <label for="message" style="display: block; font-weight: bold; margin-bottom: 0.5rem;">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" style="width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px;" required minlength="15"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn" style="background-color: var(--primary-green); color: #fff; padding: 0.75rem 1.5rem; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; font-size: 1rem;">Compile Email Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Siyoyisile Indlala Community Farm. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

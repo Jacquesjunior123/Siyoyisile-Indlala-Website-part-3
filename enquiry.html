@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Enquiry - Siyoyisile Indlala Community Farm</title>
+    <meta name="description" content="Enquire about volunteering, farm produce, training workshops and community projects at Siyoyisile Indlala Community Farm.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <h1>Siyoyisile Indlala Community Farm</h1>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us / Services</a></li>
+                <li><a href="enquiry.html" class="active" aria-current="page">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" class="container">
+        <section class="form-section">
+            <h2>Service & Project Enquiries</h2>
+            <p>Are you looking to book a training workshop, arrange bulk wholesale produce, or apply to volunteer? Submit your details below to receive dynamic pricing and availability matrices instantly.</p>
+
+           
+            <form id="enquiryForm" method="POST" action="https://formspree.io" class="styled-farm-form" style="max-width: 600px; background-color: var(--light-green); padding: 2rem; border-radius: 6px; margin-top: 1.5rem;">
+                
+                <div class="form-group" style="margin-bottom: 1.25rem;">
+                    <label for="enquiryName" style="display: block; font-weight: bold; margin-bottom: 0.5rem;">Full Name / Organisation:</label>
+                    <input type="text" id="enquiryName" name="name" required minlength="3" style="width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+                
+                <div class="form-group" style="margin-bottom: 1.25rem;">
+                    <label for="enquiryEmail" style="display: block; font-weight: bold; margin-bottom: 0.5rem;">Email Address:</label>
+                    <input type="email" id="enquiryEmail" name="email" required style="width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+
+                
+                <div class="form-group" style="margin-bottom: 1.25rem;">
+                    <label for="phone" style="display: block; font-weight: bold; margin-bottom: 0.5rem;">Phone Number (South African Format):</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="e.g., 063 952 7739" style="width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+                
+                <div class="form-group" style="margin-bottom: 1.25rem;">
+                    <label for="enquiryType" style="display: block; font-weight: bold; margin-bottom: 0.5rem;">What are you inquiring about?</label>
+                    <select id="enquiryType" name="enquiry_type" required style="width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px; background-color: #fff;">
+                        <option value="">-- Select an Option --</option>
+                        <option value="volunteering">Becoming a Farm Volunteer (R0 Induction)</option>
+                        <option value="products">Bulk Produce Wholesaling (Variable Pricing)</option>
+                        <option value="training">Training Workshop Bookings</option>
+                        <option value="partnership">Corporate Partnership Opportunities</option>
+                    </select>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 1.5rem;">
+                    <label for="enquiryMessage" style="display: block; font-weight: bold; margin-bottom: 0.5rem;">Specific Details / Message:</label>
+                    <textarea id="enquiryMessage" name="message" rows="5" required minlength="10" style="width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn" style="background-color: var(--primary-green); color: #fff; padding: 0.75rem 1.5rem; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; font-size: 1rem;">Send Dynamic Enquiry</button>
+                
+                
+                <div id="enquiry-response-box" style="margin-top: 1rem; font-weight: 600; font-size: 0.95rem;"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Siyoyisile Indlala Community Farm. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

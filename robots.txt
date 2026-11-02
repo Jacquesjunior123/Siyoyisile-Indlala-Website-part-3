@@ -1,0 +1,9 @@
+
+# Siyoyisile Indlala Community Farm
+# WEDE5020 - Part 3
+
+User-agent: *
+Allow: /
+
+Sitemap:https://courageous-piroshki-7adc3e.netlify.app/sitemap.xml
+
